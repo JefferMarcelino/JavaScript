@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        p {
+            font: normal 18pt Arial;
+        }
+
+        input#txtn1, input#txtn2, input#txtn3 {
+            width: 100px;
+        }
+        
+        input#bt1 {
+            width: 90px;
+            background-color: rgb(105, 105, 238);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Digite tres números:</p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> +
+    <input type="number" name="txtn3" id="txtn3">
+    <input id="bt1" type="button" value="Somar" onclick="somar()">
+    <p id="res"></p>
+
+    <script>
+        // Função de somar os valores digitados
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1") // Pegando o primeiro valor digitado
+            var tn2 = window.document.getElementById("txtn2") // Pegando o segundo valor digitado
+            var tn3 = window.document.getElementById("txtn3") // Pegando o terceiro valor digitado
+            var res = window.document.getElementById("res") // Pegando a parte onde o resultado vai aparecer
+
+            var n1 = Number(tn1.value) // Convertendo o primeiro valor digitado para Number
+            var n2 = Number(tn2.value) // Convertendo o segundo valor digitado para Number
+            var n3 = Number(tn3.value) // Convertendo o terceiro valor digitado para Number
+
+            var s = n1 + n2 + n3 // Variavel de soma dos valores digitados
+
+            res.innerText = `O resultado é ${s}` // Colocando o resultado na tela
+        }
+    </script>
+</body>
+</html>

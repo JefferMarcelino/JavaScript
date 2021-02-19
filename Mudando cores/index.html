@@ -14,6 +14,14 @@
             line-height: 200px;
             text-align: center;
         }
+
+        input {
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 1px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     </style>
 
 </head>
@@ -21,7 +29,6 @@
     <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
         Veja a Cor Aqui
     </div>
-    <br>
 
     <!-- Criando os botões -->
     <input id="bt1" type="button" value="Verde" style="background-color: rgb(94, 235, 94);" onmouseenter="entrouum()" onmouseout="saiuum()" onclick="clicouum()">
@@ -41,29 +48,45 @@
         // Funções acionadas quando o mause fica sobre os botões
         function entrouum() {
             btn1.style.padding = "3px"
+            btn1.style.paddingLeft = "6px"
+            btn1.style.paddingRight = "6px"
         }
         function entroudois() {
             btn2.style.padding = "3px"
+            btn2.style.paddingLeft = "6px"
+            btn2.style.paddingRight = "6px"
         }
         function entroutres() {
             btn3.style.padding = "3px"
+            btn3.style.paddingLeft = "6px"
+            btn3.style.paddingRight = "6px"
         }
         function entrouquatro() {
             btn4.style.padding = "3px"
+            btn4.style.paddingLeft = "6px"
+            btn4.style.paddingRight = "6px"
         }
 
         // Funções acionadas quando o mause saí da área dos botões
         function saiuum() {
             btn1.style.padding = "1px"
+            btn1.style.paddingLeft = "5px"
+            btn1.style.paddingRight = "5px"
         }
         function saiudois() {
             btn2.style.padding = "1px"
+            btn2.style.paddingLeft = "5px"
+            btn2.style.paddingRight = "5px"
         }
         function saiutres() {
             btn3.style.padding = "1px"
+            btn3.style.paddingLeft = "5px"
+            btn3.style.paddingRight = "5px"
         }
         function saiuquatro() {
             btn4.style.padding = "1px"
+            btn4.style.paddingLeft = "5px"
+            btn4.style.paddingRight = "5px"
         }
 
         // Funções acionadas quando o mause clica os botões 

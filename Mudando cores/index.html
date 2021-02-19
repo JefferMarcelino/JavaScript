@@ -16,17 +16,17 @@
     </style>
 </head>
 <body>
-    <div id="area" onmouseenter="clicou()" onmouseout="saiu()">
-        Clique Aqui
+    <div id="area" onmouseout="saiu()">
+        Veja a Cor Aqui
     </div>
+    <br>
+    <input type="button" value="Verde" style="background-color: rgb(94, 235, 94);">
+    <input type="button" value="Vermelho" style="background-color: rgb(238, 73, 73);">
+    <input type="button" value="amarelo" style="background-color: rgb(245, 245, 72);">
+    <input type="button" value="laranja" style="background-color: rgb(241, 174, 48);">
 
     <script>
         var d = window.document.getElementById("area")
-
-        function clicou() {
-            d.style.width = "205px"
-            d.style.height = "205px"
-        }
 
         function saiu() {
             d.style.width = "200px"

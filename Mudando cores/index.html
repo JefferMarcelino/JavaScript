@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mudando Cores com DOM</title>
+    
     <style>
         div {
             font: normal 20pt Arial;
@@ -14,23 +15,80 @@
             text-align: center;
         }
     </style>
+
 </head>
 <body>
-    <div id="area" onmouseout="saiu()">
+    <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
         Veja a Cor Aqui
     </div>
     <br>
-    <input type="button" value="Verde" style="background-color: rgb(94, 235, 94);">
-    <input type="button" value="Vermelho" style="background-color: rgb(238, 73, 73);">
-    <input type="button" value="amarelo" style="background-color: rgb(245, 245, 72);">
-    <input type="button" value="laranja" style="background-color: rgb(241, 174, 48);">
+    <input id="bt1" type="button" value="Verde" style="background-color: rgb(94, 235, 94);" onmouseenter="entrouum()" onmouseout="saiuum()" onclick="clicouum()">
+
+    <input id="bt2" type="button" value="Vermelho" style="background-color: rgb(238, 73, 73);" onmouseenter="entroudois()" onmouseout="saiudois()" onclick="clicoudois()">
+
+    <input id="bt3" type="button" value="amarelo" style="background-color: rgb(245, 245, 72);" onmouseenter="entroutres()" onmouseout="saiutres()" onclick="clicoutres()">
+
+    <input id="bt4" type="button" value="laranja" style="background-color: rgb(241, 174, 48);" onmouseenter="entrouquatro()" onmouseout="saiuquatro()" onclick="clicouquatro()">
 
     <script>
         var d = window.document.getElementById("area")
+        
+        var btn1 = window.document.getElementById("bt1")
+        var btn2 = window.document.getElementById("bt2")
+        var btn3 = window.document.getElementById("bt3")
+        var btn4 = window.document.getElementById("bt4")
 
+
+        function entrouum() {
+            btn1.style.padding = "3px"
+        }
+        function entroudois() {
+            btn2.style.padding = "3px"
+        }
+        function entroutres() {
+            btn3.style.padding = "3px"
+        }
+        function entrouquatro() {
+            btn4.style.padding = "3px"
+        }
+
+
+        function saiuum() {
+            btn1.style.padding = "1px"
+        }
+        function saiudois() {
+            btn2.style.padding = "1px"
+        }
+        function saiutres() {
+            btn3.style.padding = "1px"
+        }
+        function saiuquatro() {
+            btn4.style.padding = "1px"
+        }
+
+
+        function clicouum() {
+            d.style.backgroundColor = "rgb(94, 235, 94)"
+        }
+        function clicoudois() {
+            d.style.backgroundColor = "rgb(238, 73, 73)"
+        }
+        function clicoutres() {
+            d.style.backgroundColor = " rgb(245, 245, 72)"
+        }
+        function clicouquatro() {
+            d.style.backgroundColor = " rgb(241, 174, 48)"
+        }
+
+        
+        function clicou() {
+            d.style.backgroundColor = " rgb(103, 103, 247)"
+        }
+        function entrou() {
+            d.style.padding = "2px"
+        }
         function saiu() {
-            d.style.width = "200px"
-            s.style.height = "200px"
+            d.style.padding = "1px"
         }
     </script>
 </body>

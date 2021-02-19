@@ -16,8 +16,22 @@
     </style>
 </head>
 <body>
-    <div>
+    <div id="area" onmouseenter="clicou()" onmouseout="saiu()">
         Clique Aqui
     </div>
+
+    <script>
+        var d = window.document.getElementById("area")
+
+        function clicou() {
+            d.style.width = "205px"
+            d.style.height = "205px"
+        }
+
+        function saiu() {
+            d.style.width = "200px"
+            s.style.height = "200px"
+        }
+    </script>
 </body>
 </html>

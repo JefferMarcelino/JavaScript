@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mudando Cores com DOM</title>
-    
+    <!-- Estilo do documento -->
     <style>
         div {
             font: normal 20pt Arial;
@@ -22,23 +22,23 @@
         Veja a Cor Aqui
     </div>
     <br>
+
+    <!-- Criando os botões -->
     <input id="bt1" type="button" value="Verde" style="background-color: rgb(94, 235, 94);" onmouseenter="entrouum()" onmouseout="saiuum()" onclick="clicouum()">
-
     <input id="bt2" type="button" value="Vermelho" style="background-color: rgb(238, 73, 73);" onmouseenter="entroudois()" onmouseout="saiudois()" onclick="clicoudois()">
-
     <input id="bt3" type="button" value="amarelo" style="background-color: rgb(245, 245, 72);" onmouseenter="entroutres()" onmouseout="saiutres()" onclick="clicoutres()">
-
     <input id="bt4" type="button" value="laranja" style="background-color: rgb(241, 174, 48);" onmouseenter="entrouquatro()" onmouseout="saiuquatro()" onclick="clicouquatro()">
 
+    <!-- Script do documento -->
     <script>
+        // Variaveis de seleção de documentos 
         var d = window.document.getElementById("area")
-        
         var btn1 = window.document.getElementById("bt1")
         var btn2 = window.document.getElementById("bt2")
         var btn3 = window.document.getElementById("bt3")
         var btn4 = window.document.getElementById("bt4")
 
-
+        // Funções acionadas quando o mause fica sobre os botões
         function entrouum() {
             btn1.style.padding = "3px"
         }
@@ -52,7 +52,7 @@
             btn4.style.padding = "3px"
         }
 
-
+        // Funções acionadas quando o mause saí da área dos botões
         function saiuum() {
             btn1.style.padding = "1px"
         }
@@ -66,7 +66,7 @@
             btn4.style.padding = "1px"
         }
 
-
+        // Funções acionadas quando o mause clica os botões 
         function clicouum() {
             d.style.backgroundColor = "rgb(94, 235, 94)"
         }
@@ -80,13 +80,15 @@
             d.style.backgroundColor = " rgb(241, 174, 48)"
         }
 
-        
+        // Função de quando o mause clica na area da div
         function clicou() {
             d.style.backgroundColor = " rgb(103, 103, 247)"
         }
+        // Função de quando o mause entra na área da div
         function entrou() {
             d.style.padding = "1.5px"
         }
+        // Função de quando o mause saí da área da div
         function saiu() {
             d.style.padding = "1px"
         }

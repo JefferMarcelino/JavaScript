@@ -1,0 +1,1 @@
+const userCardTemplate = document.querySelector("[data-user-template]")
